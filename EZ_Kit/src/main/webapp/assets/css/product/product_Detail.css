@@ -1,0 +1,434 @@
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.warp_btn {
+    position: fixed;
+    bottom: 9rem;
+    right: 0rem;
+    padding-right: 10rem;
+}
+
+.top_warp_btn, .bottom_warp_btn {
+    outline: none;
+    border: 1px solid #68441E;
+    border-radius: 2rem;
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+    color: #68441E;
+}
+
+.top_warp_btn:hover, .bottom_warp_btn:hover {
+    cursor: pointer;
+    font-size: 2.2rem;
+}
+
+.product_detail_table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    padding: 3rem 1.5rem 3rem 1.5rem;
+
+    width: 70%;
+    min-width: 120rem;
+
+
+    border: 1px solid #68441E;
+    border-radius: 2rem;
+    
+    background-color: #ffffff;
+
+    text-align: center;
+}
+
+.detail_img_td {
+    padding-left: 2rem;
+    width: 40%;
+    height: 50rem;
+}
+
+.detail_img_set {
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.detail_sub_img_div {
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 10rem;
+    text-align: left;
+}
+
+.detail_sub_img_set {
+    width: 11.8rem;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.detail_info_td {
+    width: 60%;
+    height: 50rem;
+    text-align: left;
+}
+
+.detail_title_div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4e391f;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid #68441E;
+    padding-bottom: 2rem;
+}
+
+.cooking_info_div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 2rem;
+    color: #33220f;
+    border-bottom: 1px solid #68441E;
+    padding-bottom: 2rem;
+}
+
+.cooking_info_span {
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #33220f;
+}
+
+.price_div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 2rem;
+    color: #33220f;
+    border-bottom: 1px solid #68441E;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.price_span {
+    margin-left: 6.1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #33220f;
+}
+
+.point_div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 2rem;
+    color: #4e391f;
+    border-bottom: 1px solid #68441E;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.point_span {
+    margin-left: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #33220f;
+}
+
+.quantity_btn_div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 2rem;
+    color: #4e391f;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.quantity_btn_span {
+    margin-left: 8.9rem;
+}
+
+.quantity_minus_btn {
+    outline: none;
+    border: none;
+    margin-right: -0.8rem;
+    border-top: 1px solid #68441E;
+    border-bottom: 1px solid #68441E;
+    border-left:  1px solid #68441E;
+    background-color: #ffffff;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.quantity_plus_btn {
+    outline: none;
+    border: none;
+    margin-left: -0.8rem;
+    border-top: 1px solid #68441E;
+    border-bottom: 1px solid #68441E;
+    border-right:  1px solid #68441E;
+    background-color: #ffffff;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.quantity_minus_btn:hover, .quantity_plus_btn:hover {
+    cursor: pointer;
+}
+
+.quantity_result {
+    outline: none;
+    border: none;
+    border-top: 1px solid #68441E;
+    border-bottom: 1px solid #68441E;
+    background-color: #ffffff;
+    font-size: 2rem;
+    width: 15rem;
+    height: 3rem;
+}
+
+.quantity_result_span {
+    margin-left: 8rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.cart_btn_div {
+    border-top: 2px solid #68441E;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 12rem;
+    font-size: 2rem;
+    color: #4e391f;
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cart_btn, .recipe_btn, 
+.del_btn, .edit_btn {
+    outline: none;
+    border: 1px solid #68441E;
+    border-radius: 2rem;
+    background-color: #ffffff;
+    font-weight: bold;
+    font-size: 2rem;
+    height: 4rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.cart_btn:hover, .recipe_btn:hover,
+.del_btn:hover, .edit_btn:hover {
+    background-color: #68441e1c;
+    cursor: pointer;
+    font-weight: bold;
+    color: #493015;
+    font-size: 2.2rem;
+}
+
+.info_img_div {
+    margin-top: 5rem;
+    padding-top: 5rem;
+    border-top: 2px solid #68441E;
+}
+
+.info_img_set {
+    width: 95%;
+}
+
+.info_text_div {
+    margin-top: 2rem;
+}
+
+.info_text {
+    border: 1px solid #33220f;
+    resize: none;
+    background-color: transparent;
+    width: 93%;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #68441E;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.review_table {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 1rem 1rem 1rem;
+
+    width: 70%;
+    min-width: 120rem;
+
+    border: 1px solid #68441E;
+    border-bottom: 1px solid #ffffff;
+
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    
+    background-color: #ffffff;
+
+    text-align: center;
+}
+
+.review_writing_td {
+    width: 90%;
+    height: 100%;
+}
+
+.review_writing_btn_td {
+    width: 10%;
+}
+
+.review_writing_text {
+    resize: none;
+    outline: none;
+    border: none;
+    border: 1px solid #68441E;
+    box-shadow: inset 1px 1px 1px #aa9b89;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    width: 98%;
+    height: 8rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 2.2rem;
+    color: #3a2611;
+}
+
+.review_writing_btn {
+    border-radius: 1rem;
+    border: 1px solid #68441E;
+    background-color: #ffffff;
+    outline: none;
+    width: 90%;
+    height: 10rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.review_writing_btn:hover {
+    background-color: #c29c7331;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.review_content_table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10rem;
+    padding: 1rem 1rem 1rem 1rem;
+
+    width: 70%;
+    min-width: 120rem;
+
+
+    border: 1px solid #68441E;
+    border-top: 1px solid #ffffff;
+
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    
+    background-color: #ffffff;
+
+    text-align: center;
+}
+
+.order_review_td, .seller_review_td {
+    width: 85%;
+    padding-bottom: 2rem;
+}
+
+.order_review_text, .seller_review_text {
+    resize: none;
+    outline: none;
+    border: none;
+    border: 1px solid #68441E;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    width: 98%;
+    height: 8rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-size: 2.2rem;
+    color: #3a2611;
+}
+
+.order_review_info, .seller_review_info {
+    width: 20%;
+    font-size: 2rem;
+}
+
+.order_nick, .order_review_date,
+.seller_nick, .seller_review_date {
+    padding-left: 2rem;
+    text-align: left;
+    color: #4b3116;
+    font-weight: bold;
+}
+
+.seller_nick_span {
+    color: #ad2d2d;
+    font-weight: bold;
+}
+
+.order_nick_btn {
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4b3116;
+    cursor: pointer;
+}
+
+.order_nick_btn:hover {
+    text-decoration: underline;
+}
+
+.order_review_date, .seller_review_date {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.order_review_btn_div, .seller_review_btn_div {
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.order_review_del_btn, .order_review_edit_btn,
+.seller_review_del_btn, .seller_review_edit_btn {
+    border: 1px solid #68441E;
+    outline: none;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    width: 7rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.order_review_del_btn:hover, .order_review_edit_btn:hover,
+.seller_review_del_btn:hover, .seller_review_edit_btn:hover {
+    background-color: #c29c7331;
+    cursor: pointer;
+}

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.admin_qna_area {
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 70%;
+    min-width: 120rem;
+    font-size: 2rem;
+    color: #3d260e;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    padding: 2rem 4rem 2rem 4rem;
+    height: 65rem;
+}
+
+.qna_content_div {
+    height: 60rem;
+    overflow: scroll;
+}
+
+.qna_table {
+    width: 100%;
+    text-align: center;
+}
+
+.num_th, .title_th, .nick_th, .date_th {
+    border-bottom: 2px solid #3d260e;
+    padding-bottom: 1rem;
+}
+
+.content_list_div {
+    height: 50rem;
+}
+
+.num_td, .title_td, .nick_td, .date_td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #3d260e4b;
+}
+
+.num_th, .num_td {
+    width: 10%;
+}
+
+.title_th, .title_td {
+    padding-left: 2rem;
+    text-align: left;
+    width: 50%;
+}
+
+.nick_th, .nick_td,
+.date_th, .date_td {
+    width: 20%;
+}
+
+.qna_link {
+    color: #3d260e;
+    text-decoration: none;
+}

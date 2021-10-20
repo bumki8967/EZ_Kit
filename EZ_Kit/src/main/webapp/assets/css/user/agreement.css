@@ -1,0 +1,130 @@
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+/* Body 설정 */
+.agreement_body {
+    margin: 0 auto;
+}
+
+/* ▼▼▼ 로그인, 회원가입 Top, Bottom  ▼▼▼ */
+.top_account {
+    display: block;
+    font-size: 3rem;
+    width: 100%;
+    height: 10rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #68441E;
+}
+
+.top_account_text {
+    padding-top: 2.5rem;
+}
+
+.top_account_logo {
+    margin-left: 20rem;
+    color: #68441E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.account_bottom {
+    width: 100%;
+    margin-left: 20rem;
+}
+
+.account_bottom_text_1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #68441E;
+    margin-bottom: 1rem;
+}
+
+.account_bottom_text_2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #68441E;
+    margin-bottom: 5rem;
+}
+/* ▲▲▲ 로그인, 회원가입 Top, Bottom ▲▲▲ */
+
+.agreement_table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+
+    width: 40%;
+    height: 50rem;
+
+    border: 1px solid #68441E;
+    border-radius: 2rem;
+
+    background-color: #ffffff;
+
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.agreement_title {
+    text-align: center;
+    font-weight: bold;
+    color: #68441E;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.radio_div {
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+}
+
+.radio_set {
+    width: 2rem;
+    height: 2rem;
+}
+
+.agreement_all {
+    text-align: left;
+    font-size: 2rem;
+    margin-left: 11rem;
+    margin-bottom: 3rem;
+}
+
+.agreement_text {
+    width: 70%;
+    height: 10rem;
+    resize: none;
+    outline: none;
+    margin-bottom: 5rem;
+}
+
+.agreement_btn_td {
+    padding-bottom: 5rem;
+}
+
+.consent_btn, .cancel_btn {
+    font-size: 2rem;
+    outline: none;
+    background-color: #ffffff;
+    border: 1px solid #68441E;
+    color: #363636;
+    border-radius: 2rem;
+    width: 50%;
+    height: 3.5rem;
+}
+
+.consent_btn {
+    margin-bottom: 1.5rem;
+}
+
+.consent_btn:hover, .cancel_btn:hover {
+    background-color: #68441e1c;
+    cursor: pointer;
+    font-weight: bold;
+    color: #68441E;
+}

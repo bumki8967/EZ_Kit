@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE mapper 
+   PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ 
+<mapper namespace="com.project.ezkit.order.OrderMapper">
+
+   <resultMap type="com.project.ezkit.order.Order" id="Order">
+      <result property="order_num"					column="order_num"/>
+      <result property="user_id"          			column="user_id"/>
+      <result property="product_num"     			column="product_num"/>
+      <result property="order_total_quantity"   	column="order_total_quantity"/>
+      <result property="order_payment_price"     	column="order_payment_price"/>
+      <result property="order_save_point"     		column="order_save_point"/>
+      <result property="order_used_point"  			column="order_used_point"/>
+      <result property="order_user_tel"     		column="order_user_tel"/>
+      <result property="order_user_address1"  		column="order_user_address1"/>
+      <result property="order_user_address2"     	column="order_user_address2"/>
+      <result property="order_user_postcode"    	column="order_user_postcode"/>
+      <result property="Payment_date"            	column="Payment_date"/>
+   </resultMap>
+
+   <!-- insert : 처음 구매 ->  주문 테이블, 주문 정보를 담는다 -->
+   <insert id="insertOrder" parameterType="com.project.ezkit.order.Order">
+		INSERT INTO ezkit_order  
+		VALUES ( #{order_num}, #{user_id}, #{order_total_quantity}, #{order_payment_price}, #{order_save_point}, #{order_used_point}, 
+				 #{order_user_tel}, #{order_user_address1}, #{order_user_address2}, #{order_user_postcode}, sysdate )
+   </insert>
+
+   <!-- sequence 번호 가져오기 -->
+   <select id="getNum" resultType="int">
+		SELECT 	seq_ezkit_order.nextval
+		FROM 		dual
+   </select>
+      
+   <!-- 구매내역 전체 출력 : 최신순 -->
+      <select id="selectOrderAll" resultMap="Order">
+         SELECT	*
+         FROM	ezkit_order
+         ORDER	BY order_num DESC
+      </select>
+
+   <!-- 주문번호로 검색 : 최신순 -->
+   <select id="selectOrderByOrderNum" resultMap="Order" parameterType="int">
+		SELECT	*
+		FROM 	ezkit_order
+		WHERE  	order_num = #{order_num}
+		ORDER BY order_num DESC
+   </select>
+
+   <!-- user_id로 검색 : 최신순 -->
+   <select id="selectOrderByUserId" resultMap="Order" parameterType="String">
+		SELECT	*
+		FROM    ezkit_order
+		WHERE   user_id = #{user_id}
+		ORDER BY order_num DESC
+   </select>   
+   
+   <!-- 월별 구매 횟수 : 등급 자동갱신 -->
+   <select id="countOrderMonth" resultType="int" parameterType="String">
+ 		SELECT	count(order_product_num)
+		FROM	ezkit_order_product
+ 		WHERE 	payment_date between to_date(#{month_start}, 'yyyy/mm/dd') AND 	to_date(#{month_end}, 'yyyy/mm/dd')
+ 		ORDER BY order_num DESC
+   </select>
+   
+   <!-- 주문 삭제 : 취소 -->
+   <delete id="deleteOrder" parameterType="java.util.Map">
+ 		DELETE 
+      	FROM   ezkit_order
+      	WHERE   user_id = #{user_id}
+      	AND      order_num = #{order_num}
+   </delete>
+
+</mapper>

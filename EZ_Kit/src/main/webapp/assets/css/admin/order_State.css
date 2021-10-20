@@ -1,0 +1,136 @@
+/* 1rem = 10px로 설정 */
+
+html {
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.util_btn_area {
+    position: fixed;
+    top: 24rem;
+    right: 0;
+    width: 8%;
+    height: 70%;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.util_label {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3b2711;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #3b2711;
+}
+
+.check_btn_div {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.state_btn_div {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.order_state_btn,
+.all_check_btn {
+    margin-bottom: 1rem;
+}
+
+.order_state_area {
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    background-color: #ffffff;
+    width: 60%;
+    min-width: 110rem;
+    border-radius: 2rem;
+    padding: 4rem 4rem 4rem 4rem;
+}
+
+.order_state_table {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.check_th,
+.check_td {
+    width: 5%;
+}
+
+.num_th,
+.num_td {
+    width: 5%;
+}
+
+.order_nick_th,
+.order_nick_td {
+    width: 15%;
+    /* overflow: scroll; */
+}
+
+.name_th,
+.name_td {
+    text-align: left;
+    width: 40%;
+}
+
+.state_th,
+.state_td {
+    width: 15%;
+}
+
+.date_th,
+.date_td {
+    width: 20%;
+}
+
+.check_th,
+.num_th,
+.order_nick_th,
+.name_th,
+.state_th,
+.date_th {
+    border-bottom: 2px solid #3b2711;
+    padding-bottom: 1rem;
+}
+
+.check_td,
+.num_td,
+.order_nick_td,
+.name_td,
+.state_td,
+.date_td {
+    border-bottom: 1px solid #3b271154;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.order_state_btn,
+.all_check_btn,
+.all_check_cancel_btn {
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #3b2711;
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 12rem;
+    border-radius: 2rem;
+    color: #4b331a;
+}
+
+.checkbox {
+    width: 2rem;
+    height: 2rem;
+}
+
+.order_state_btn:hover,
+.all_check_btn:hover,
+.all_check_cancel_btn:hover {
+    background-color: #91602d23;
+}

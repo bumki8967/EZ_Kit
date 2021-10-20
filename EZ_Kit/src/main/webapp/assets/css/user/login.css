@@ -1,0 +1,134 @@
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+/* Body 설정 */
+.login_body {
+    margin: 0 auto;
+}
+
+/* ▼▼▼ 로그인, 회원가입 Top, Bottom ▼▼▼ */
+.top_account {
+    display: block;
+    font-size: 3rem;
+    width: 100%;
+    height: 10rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #68441E;
+}
+
+.top_account_text {
+    padding-top: 2.5rem;
+}
+
+.top_account_logo {
+    margin-left: 20rem;
+    color: #68441E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.account_bottom {
+    width: 100%;
+    margin-left: 20rem;
+}
+
+.account_bottom_text_1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #68441E;
+    margin-bottom: 1rem;
+}
+
+.account_bottom_text_2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #68441E;
+}
+/* ▲▲▲ 로그인, 회원가입 Top, Bottom ▲▲▲ */
+
+
+
+.login_table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+
+    width: 40%;
+    height: 50rem;
+
+    border: 1px solid #68441E;
+    border-radius: 2rem;
+    
+    background-color: #ffffff;
+
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.login_title {
+    font-weight: bold;
+    color: #68441E;
+}
+
+.id_div, .pw_div {
+    font-weight: bold;
+    color: #68441E;
+    font-size: 2rem;
+    margin-left: 8rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    width: 12rem;
+}
+
+.pw_div {
+    margin-top: 5rem;
+}
+
+.id_text, .pw_text {
+    outline: none;
+    border: none;
+    padding-left: 2rem;
+    border-bottom: 1px solid #68441E;
+    width: 70%;
+    height: 3rem;
+}
+
+.login_btn, .reg_btn {
+    font-size: 2rem;
+    outline: none;
+    background-color: #ffffff;
+    border: 1px solid #68441E;
+    color: #363636;
+    border-radius: 2rem;
+    width: 50%;
+    height: 3.5rem;
+}
+
+.login_btn {
+    margin-bottom: 1.5rem;
+}
+
+.find_pw_div {
+    margin-top: 1rem;
+}
+
+.find_pw {
+    color: #68441E;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.reg_btn {
+    margin-top: 1.5rem;
+}
+
+.login_btn:hover, .reg_btn:hover {
+    background-color: #68441e1c;
+    cursor: pointer;
+    font-weight: bold;
+    color: #68441E;
+}

@@ -1,0 +1,63 @@
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+}
+
+.find_bar_area {
+    margin: auto;
+    padding: 2rem 2rem 2rem 2rem;
+    width: 68%;
+    border-bottom: 1px solid #3a2611;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.find_bar_text {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #3a2611;
+    border-radius: 3rem;
+    width: 50%;
+    height: 5rem;
+    padding-left: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3a2611;
+}
+
+.find_menu_btn_div {
+    margin-top: 0.6rem;
+    margin-left: -11rem;
+}
+
+.find_menu_btn {
+    background-color: #3b2914;
+    border-radius: 3rem;
+    font-size: 2rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    height: 4rem;
+    width: 10rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.find_menu_btn:hover {
+    background-color: #3b2914b6;
+    color: #2c1d0b;
+}
+
+.not_find_div {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3a2611;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+
+.not_find_label {
+    margin-top: 2rem;
+}

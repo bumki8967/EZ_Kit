@@ -1,0 +1,279 @@
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.profile_menu_bar_area {
+    position: fixed;
+    background-color: #ffffff;
+    top: 24rem;
+    left: 0rem;
+    border-top-right-radius: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2f1f0d;
+    width: 6%;
+    height: 70%;
+    padding: 3rem 5rem 3rem 5rem;
+    padding-left: 5rem;
+    padding-top: 3rem;
+}
+
+.menu_bar_link {
+    color: #2f1f0d;
+    text-decoration: none;
+}
+
+.menu_bar_logo {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    border-bottom: 1px solid #694b28;
+}
+
+.menu_bar_hello_1 {
+    font-weight: normal;
+}
+
+.menu_bar_hello_2 {
+    margin-bottom: 2rem;
+}
+
+.menu_bar_label {
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    border-top: 1px solid #694b28;
+    border-bottom: 1px solid #694b281c;
+    padding-left: 0.5rem;
+}
+
+.menu_bar_link_div {
+    font-weight: normal;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    padding-left: 0.5rem;
+}
+
+.profile_area {
+    margin: auto;
+    margin-top: 10rem;
+    width: 70%;
+}
+
+.user_info_area {
+    display: flex;
+    padding: 2rem 2rem 2rem 2rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2f1f0d;
+}
+
+.user_id {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.user_info {
+    width: 70%;
+}
+
+.user_addr_info {
+    width: 30%;
+}
+
+.user_info_link {
+    color: #2f1f0d;
+    text-decoration: none;
+    margin-right: 5rem;
+}
+
+.user_id_span, .user_point_span {
+    font-weight: normal;
+    color: #694b28;
+}
+
+.user_rating_area {
+    display: flex;
+    padding: 5rem 2rem 5rem 2rem;
+    margin-top: 10rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+}
+
+.rating_view_div {
+    margin-left: 4rem;
+}
+
+.rating_text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2f1f0d;
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+
+.Silver, .Gold, .Diamond {
+    margin-right: 3rem;
+}
+
+.Silver, .Gold, .Diamond, .VIP {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid #2f1f0d;
+    background-color: #ffffff;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 2rem;
+}
+
+.rating_info_div {
+    width: 45%;
+    margin-left: 10rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2f1f0d;
+    line-height: 5rem;
+}
+
+.rating_info_title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.rating_info_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_result_area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.result_1, .result_2, .result_3, .result_4, .result_5 {
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+}
+
+.result_in_set {
+    margin-top: 3.5rem;
+    text-align: center;
+}
+
+.result_count {
+    font-size: 6rem;
+    font-weight: bolder;
+    color: #362d235e;
+    margin-bottom: 1rem;
+}
+
+.result_text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2f1f0d;
+}
+
+.hr_div {
+    margin: auto;
+    width: 80%;
+    border: 1px solid #68451d;
+    margin-top: -10rem;
+    z-index: -1;
+}
+
+.my_product_list_area {
+    margin: auto;
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+    padding: 2rem 3rem 2rem 3rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2f1f0d;
+}
+
+.classification_area {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #2f1f0d;
+}
+
+.my_product_label {
+    font-size: 2.8rem;
+}
+
+.classification_div {
+    margin-bottom: 2rem;
+    height: 4rem;
+
+    z-index: 1;
+}
+
+.classification_btn, .select_classification_btn {
+    outline: none;
+    border: none;
+    height: 4rem;
+    width: 12rem;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #2f1f0d;
+    border-bottom: 1px solid #2f1f0d;
+    margin-bottom: 1px;
+}
+
+.classification_btn {
+    box-shadow: 0px 1px 5px #2f1f0d;
+}
+
+.classification_btn:hover, .select_classification_btn:hover {
+    border-bottom: 2px solid #2f1f0d;
+    background-color: #c5c5c5;
+}
+
+.my_product_title_area {
+    display: flex;
+    margin-top: 2rem;
+    padding: 0rem 4rem 2rem 4rem;
+    border-bottom: 2px solid #2f1f0d;
+}
+
+.title_price, .product_price,
+.title_quantity, .product_quantity,
+.title_date, .product_date,
+.title_result, .product_result {
+    text-align: center;
+}
+
+.title_name, .product_name {
+    width: 30%;
+}
+
+.product_name_link {
+    color: #2f1f0d;
+    text-decoration: none;
+}
+
+.title_price, .product_price,
+.title_quantity, .product_quantity,
+.title_date, .product_date,
+.title_result, .product_result {
+    width: 18%;
+}
+
+.my_product_detail_area {
+    display: flex;
+    padding: 4rem 4rem 4rem 4rem;
+    border-bottom: 1px solid #2f1f0d;
+}

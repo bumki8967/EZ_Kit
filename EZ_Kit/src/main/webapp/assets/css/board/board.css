@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.writing_body {
+    margin: 0 auto;
+}
+
+.writing_table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+    width: 70%;
+    height: 65rem;
+
+    border: 1px solid #68441E;
+    border-radius: 2rem;
+    
+    background-color: #ffffff;
+
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.writing_title_td, .select_QnA_td {
+    text-align: center;
+    height: 10rem;
+}
+
+.writing_title_text {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #68441E;
+    font-size: 2rem;
+    width: 95%;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+.writing_content_td {
+    text-align: center;
+}
+
+.writing_content_text {
+    outline: none;
+    border: none;
+    resize: none;
+    border-bottom: 1px solid #68441E;
+    width: 95%;
+    height: 95%;
+    padding-left: 2rem;
+    font-size: 2rem;
+}
+
+.board_btn_td {
+    text-align: right;
+    height: 3rem;
+    padding-right: 2.5rem;
+}
+
+.footer_text_1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #68441E;
+}
+
+.footer_text_2 {
+    font-size: 1.3rem;
+    color: #201509;
+    margin-right: 2rem;
+}
+
+.board_Cancel_btn, .board_writing_btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    outline: none;
+    background-color: #ffffff;
+    border: 1px solid #68441E;
+    color: #363636;
+    border-radius: 2rem;
+    width: 12%;
+    height: 3.5rem;
+    margin-bottom: 3rem;
+}
+
+.board_Cancel_btn:hover, .board_writing_btn:hover {
+    background-color: #68441e1c;
+    cursor: pointer;
+    font-weight: bold;
+    color: #68441E;
+}

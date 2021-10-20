@@ -1,0 +1,55 @@
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+.footer_area {
+    display: flex;
+    margin-top : 10rem;
+    background-color: #22180b;
+    font-size: 1.7rem;
+    padding: 2rem 2rem 2rem 2rem;
+    min-width: 125rem;
+    color: #b9b9b9;
+}
+
+.logo_div {
+    text-align: center;
+    font-size: 3rem;
+    width: 35%;
+}
+
+.logo_link {
+    color: #b9b9b9;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.footer_link {
+    color: #b9b9b9;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.cookit_link_div, .samsung_link_div {
+    margin-bottom: 1rem;
+}
+
+.page_info_area {
+    width: 30%;
+}
+
+.page_info_label, .producers_label {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.producers {
+    margin-bottom: 1rem;
+}

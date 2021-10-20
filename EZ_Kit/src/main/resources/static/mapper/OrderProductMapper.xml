@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE mapper 
+   PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+<mapper namespace="com.project.ezkit.order.OrderProductMapper">
+
+   	<resultMap type="com.project.ezkit.order.OrderProduct" id="OrderProduct">
+     <result property="order_product_num"			column="order_product_num"/>   
+      <result property="order_num"   				column="order_num"/>
+      <result property="user_id"           			column="user_id"/>
+      <result property="product_num"     			column="product_num"/>
+     <result property="product_quantity"     		column="product_quantity"/>
+      <result property="product_price"      		column="product_price"/>
+      <result property="order_status"      			column="order_status"/>
+      <result property="payment_date"            	column="payment_date"/>
+      <result property="product_preparation_date"   column="product_preparation_date"/>
+      <result property="delivery_preparation_date"	column="delivery_preparation_date"/>
+      <result property="delivery_date"            	column="delivery_date"/>
+      <result property="delivery_completed_date"   	column="delivery_completed_date"/>
+   
+   </resultMap>   
+   
+   	<!-- 주문 상품에 데이터 넣기, 처음에는 결제 날짜만 들어간다 -->
+	<insert id="insertOrderProduct" parameterType="com.project.ezkit.order.OrderProduct">
+		INSERT INTO ezkit_order_product 
+		VALUES ( seq_ezkit_order_product.nextval, #{order_num}, #{user_id}, #{product_num}, #{product_name}, #{product_quantity},
+      			 #{product_price}, #{order_status}, sysdate, null, null, null, null )
+ 	</insert>
+   
+   <!-- 주문 번호로 주문서 상품 가져오기 -->
+   	<select id="selectOrderProductByOrderNum" parameterType="int" resultMap="OrderProduct">
+		SELECT	* 
+		FROM	ezkit_order_product
+  		WHERE 	order_num = #{order_num}
+   	</select>
+   
+   <!-- id로 검색 : 최신순 -->
+	<select id="selectOrderProductByUserId" parameterType="String" resultMap="OrderProduct">
+       SELECT   *
+       FROM    ezkit_order_product
+       WHERE   user_id = #{user_id}
+       ORDER BY order_product_num DESC
+	</select>
+   
+   <!-- 주문 상태랑 id로 주문서 상품 가져오기 -->
+   <select id="selectOrderProductByStatusAndUserId" parameterType="java.util.Map" resultMap="OrderProduct">
+      SELECT * 
+      FROM ezkit_order_product
+      WHERE order_status = #{order_status}
+      AND   user_id = #{user_id}
+      ORDER BY order_num DESC
+   </select>
+   
+   
+   <!-- 결제완료 날짜 가져오기 -->
+   <select id="selectPaymentDate" parameterType="java.util.Map" resultType="java.sql.Date">
+      SELECT   payment_date
+      FROM   ezkit_order_product
+      where    order_num = #{order_num}
+      AND      product_num = #{product_num}
+      ORDER BY payment_date DESC
+   </select>
+   
+   <!-- 재료준비 날짜 가져오기 -->
+   <select id="selectProductPreaparationDate" parameterType="java.util.Map" resultType="java.sql.Date">
+      SELECT   Product_preparation_date 
+      FROM   ezkit_order_product
+      where    order_num = #{order_num}
+      AND      product_num = #{product_num}
+      ORDER BY payment_date DESC
+   </select>
+   
+   <!-- 배송준비 날짜 가져오기 -->
+   <select id="selectDeliveryPreaparationDate" parameterType="java.util.Map" resultType="java.sql.Date">
+      SELECT   Delivery_preparation_date  
+      FROM   ezkit_order_product
+      where    order_num = #{order_num}
+      AND      product_num = #{product_num}
+      ORDER BY payment_date DESC
+   </select>
+
+   <!-- 배송중 날짜 가져오기 -->
+   <select id="selectDeliveryDate" parameterType="java.util.Map" resultType="java.sql.Date">
+      SELECT   Delivery_date  
+      FROM   ezkit_order_product
+      where    order_num = #{order_num}
+      AND      product_num = #{product_num}
+      ORDER BY payment_date DESC
+   </select>  
+
+   <!-- 배송완료 날짜 가져오기 -->
+   <select id="selectDeliveryCompletedDate" parameterType="java.util.Map" resultType="java.sql.Date">
+      SELECT   Delivery_completed_date   
+      FROM   ezkit_order_product
+      where    order_num = #{order_num}
+      AND      product_num = #{product_num}
+      ORDER BY payment_date DESC
+   </select>  
+   
+   <!-- 구매 상태 카운트 -->
+   <select id="countOrderByOrderStatus" parameterType="java.util.Map" resultType="int">
+      SELECT   count(order_product_num)
+      FROM    ezkit_order_product
+      WHERE    order_status = #{order_status}
+      AND    user_id = #{user_id} 
+   </select>     
+   
+   
+   <!--  관리자 용  -->
+   
+   <!-- 주문 상태에 따라 상품 가져오기 -->
+   <select id="selectOrderProductByOrderStatus" parameterType="int" resultMap="OrderProduct">
+      SELECT   *
+      FROM   ezkit_order_product
+      WHERE   order_status = #{order_status}
+      ORDER BY payment_date DESC
+   </select>
+   
+   <!-- 주문 상태 변경하기 : 재료준비 -->
+   <update id="updateProductPreparationDate" parameterType="int">
+      UPDATE   ezkit_order_product
+      SET      product_preparation_date = sysdate, 
+            order_status = 2
+      WHERE   order_product_num = #{order_product_num}
+   </update>
+   
+   <!-- 주문 상태 변경하기 : 배송준비 -->
+   <update id="updateDeliveryPreparationDate" parameterType="int">
+      UPDATE   ezkit_order_product
+      SET      delivery_preparation_date = sysdate,
+            order_status = 3
+      WHERE   order_product_num = #{order_product_num}
+   </update>
+   
+   <!-- 주문 상태 변경하기 : 배송중 -->
+   <update id="updateDelieveryDate" parameterType="int">
+      UPDATE   ezkit_order_product
+      SET      delivery_date = sysdate,
+            order_status = 4
+      WHERE   order_product_num = #{order_product_num}
+   </update>
+   
+   <!-- 주문 상태 변경하기 : 배송완료 -->
+   <update id="updateDeliveryCompletedDate" parameterType="int">
+      UPDATE   ezkit_order_product
+      SET      delivery_completed_date = sysdate,
+            order_status = 5
+      WHERE   order_product_num = #{order_product_num}
+   </update>
+   
+   
+   
+
+   
+   
+   
+   
+   
+   
+   
+      
+   
+</mapper>

@@ -1,0 +1,201 @@
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.user_out_div {
+    margin: auto;
+    margin-top: 10rem;
+    text-align: right;
+    width: 44%;
+}
+
+.user_out_btn {
+    width: 20rem;
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    height: 4rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #4e3211;
+}
+
+.user_out_btn:hover {
+    background-color: #68441e1c;
+}
+
+.user_find_area {
+    margin: auto;
+    margin-top: 1rem;
+    min-width: 74rem;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    font-size: 2rem;
+    color: #3b250c;
+    padding: 2rem 4rem 2rem 4rem;
+    min-width: 74rem;
+}
+
+.user_id_area {
+    margin: auto;
+    margin-top: 4rem;
+    width: 40%;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    font-size: 2rem;
+    color: #3b250c;
+    padding: 2rem 4rem 2rem 4rem;
+    min-width: 74rem;
+}
+
+.user_id_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating_btn_div {
+    display: flex;
+    margin-top: 5rem;
+}
+
+.rating_btn {
+    outline: none;
+    border: 1px solid #3b250c;
+    border-radius: 2rem;
+    margin-left: 5rem;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #3b250c;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.rating_btn:hover {
+    background-color: #3b250c25;
+}
+
+.user_find_text {
+    outline: none;
+    border-radius: 2rem;
+    border: 1px solid #3b250c;
+    width: 71rem;
+    height: 4rem;
+    padding-left: 2rem;
+    font-size: 1.7rem;
+}
+
+.find_btn_div {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 0.4rem;
+    margin-left: -8.5rem;
+}
+
+.find_btn {
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    background-color: #4e3211;
+    height: 3.5rem;
+    width: 8rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: 1px 1px 5px #1b1106;
+}
+
+.find_btn:hover {
+    background-color: #4e32118f;
+}
+
+.user_point_area {
+    margin: auto;
+    width: 40%;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    font-size: 2rem;
+    color: #3b250c;
+    padding: 2rem 4rem 2rem 4rem;
+    min-width: 74rem;
+}
+
+.user_point_area {
+    margin-top: 4rem;
+}
+
+.point_div {
+    margin-bottom: 2rem;
+}
+
+.point_text_box {
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    background-color: transparent;
+    width: 32rem;
+    text-align: center;
+}
+
+.point_btn, .point_del_btn, .point_edit_btn {
+    outline: none;
+    border: 1px solid #3b250c;
+    width: 13rem;
+    height: 3rem;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.point_del_btn {
+    margin-right: 1.7rem;
+}
+
+.point_btn:hover, .point_del_btn:hover, .point_edit_btn:hover {
+    background-color: #3b250c1f;
+}
+
+.point_btn_area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.user_info_area {
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    width: 40%;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    font-size: 2rem;
+    color: #3b250c;
+    padding: 2rem 4rem 4rem 4rem;
+    min-width: 74rem;
+}
+
+.user_info_table {
+    width: 100%;
+    height: 40rem;
+    text-align: left;
+}
+
+.user_info_th {
+    width: 30%;
+}
+
+.user_info_th, .user_info_td {
+    padding-left: 1.5rem;
+    height: 5rem;
+    border-bottom: 1px solid #3b250c;
+}

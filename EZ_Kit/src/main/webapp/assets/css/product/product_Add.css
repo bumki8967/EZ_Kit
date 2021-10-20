@@ -1,0 +1,187 @@
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.product_add_area {
+    padding: 3rem 3rem 3rem 3rem;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 55%;
+    min-width: 100rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    border: 1px solid #2f1f0d;
+}
+
+.header_text_div {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #221609;
+    margin-bottom: 5rem;
+}
+
+.main_img_area {
+    display: flex;
+    text-align: left;
+}
+
+.main_img_add_label {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.main_img_view_div {
+    display: flex;
+}
+
+.main_img_set {
+    width: 20rem;
+    height: 20rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+}
+
+.main_img_add_btn {
+    outline: none;
+    border: 1px solid #2f1f0d;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    height: 20rem;
+    width: 18rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.info_img_add_btn {
+    margin-top: 2rem;
+    outline: none;
+    border: 1px solid #2f1f0d;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.add_btn_in_set {
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+}
+
+.main_img_add_btn:hover {
+    background-color: #64441c2a;
+}
+
+.btn_text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2f1f0d;
+}
+
+.product_name_div, .product_price_div,
+.product_classification_div, .cooking_info_div,
+.prdouct_quantity_div, .product_detail_div,
+.add_product_btn_div {
+    display: flex;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid #2f1f0d;
+}
+
+.product_detail_div {
+    flex-direction: column;
+}
+
+.add_product_btn_div {
+    justify-content: space-evenly;
+}
+
+.product_name_label, .product_price_label,
+.product_classification_label, .cooking_info_label,
+.prdouct_quantity_lebel, .prdouct_quantity_lebel,
+.product_detail_label {
+    width: 14rem;
+    color: #2f1f0d;
+    font-weight: bold;
+    margin-right: 3rem;
+    font-size: 2rem;
+}
+
+.product_name_text, .product_price_text,
+.prdouct_quantity_text {
+    outline: none;
+    border: none;
+    width: 80%;
+    height: 3rem;
+    font-size: 2rem;
+    color: #2e1e0d;
+    background-color: transparent;
+}
+
+.product_detail_text_area {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.product_detail_text {
+    margin-right: 2rem;
+    outline: none;
+    resize: none;
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    border: 1px solid #2f1f0d;
+    border-radius: 1rem;
+    width: 98%;
+    height: 17.5rem;
+}
+
+.classification_radio_btn {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2f1f0d;
+    width: 100%;
+    height: 3rem;
+    overflow: auto;
+}
+
+.radio_btn {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.cooking_info_1, .cooking_info_2, .cooking_info_3 {
+    margin-right: 5rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.cooking_info_text {
+    outline: none;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid #2f1f0d;
+    width: 5rem;
+}
+
+.add_product_btn, .cancel_btn {
+    outline: none;
+    border: 1px solid #2f1f0d;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    font-size: 2rem;
+/*     font-weight: bold; */
+    width: 45%;
+    height: 4rem;
+}
+
+.add_product_btn:hover, .cancel_btn:hover {
+    background-color: #8a602f27;
+    cursor: pointer;
+}

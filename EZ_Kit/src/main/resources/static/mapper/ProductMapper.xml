@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE mapper 
+   PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+<mapper namespace="com.project.ezkit.product.ProductMapper">
+   <resultMap type="com.project.ezkit.product.Product" id="Product">
+      <result property="product_num"          	column="product_num"/>
+      <result property="product_name"          	column="product_name"/>
+      <result property="product_price"          column="product_price"/>
+      <result property="product_quantity"       column="product_quantity"/>
+      <result property="product_classification" column="product_classification"/>
+      <result property="product_portion"       	column="product_portion"/>
+      <result property="product_time"          	column="product_time"/>
+      <result property="product_level"          column="product_level"/>
+      <result property="product_info"          	column="product_info"/>
+      <result property="product_regdate"       	column="product_regdate"/>
+      <result property="product_hit"          	column="product_hit"/>
+   </resultMap>
+   
+   <!-- 상품 등록 -->
+   <insert id="insertProduct" parameterType="com.project.ezkit.product.ProductMapper">
+      	INSERT   INTO ezkit_product   
+      	VALUES ( #{product_num}, #{product_name}, #{product_price}, #{product_quantity}, #{product_classification}, #{product_portion},
+         	   	 #{product_time}, #{product_level}, #{product_info}, sysdate, 0 )       
+   </insert>
+   
+   <select id="selectProductByNum" parameterType="int" resultMap="Product">
+		SELECT   *
+		FROM   ezkit_product
+		WHERE   product_num = #{product_num}
+   </select>
+   
+   
+   <!-- 상풍명 검색 -->
+   <select id="selectProductByName" parameterType="String" resultMap="Product">
+		SELECT	*
+   		FROM	ezkit_product
+   		WHERE	product_name LIKE '%${product_name}%'
+   		ORDER BY product_num DESC
+   </select>
+
+   <select id="selectProductByClassification" parameterType="String" resultMap="Product">
+      	SELECT	*
+      	FROM 	ezkit_product
+      	WHERE 	product_classification = #{product_classification}
+   </select>   
+   
+    <select id="selectProductByHit" resultMap="Product">
+      	SELECT	*
+      	FROM	ezkit_product
+      	ORDER BY product_hit DESC
+   </select>
+   
+   <select id="selectProductAll" resultMap="Product">
+      	SELECT	*
+      	FROM	ezkit_product
+      	ORDER BY product_num DESC
+   </select>
+
+   <update id="updateProduct" parameterType="com.project.ezkit.product.ProductMapper">
+      	UPDATE	ezkit_product
+      	SET		product_name = #{product_name}, product_price = #{product_price}, product_quantity = #{product_quantity},
+      			product_classification = #{product_classification}, product_portion = #{product_portion},
+     			product_time = #{product_time}, product_level = #{product_level}, product_info = #{product_info}
+      	WHERE	product_num = #{product_num}
+   </update>
+   
+    <!-- 클릭 시 조회수 1증가 -->
+   <update id="updateProductHit" parameterType="int">
+      	UPDATE	ezkit_product
+      	SET		product_hit = product_hit + 1
+      	WHERE	product_num = #{product_num}
+   </update>
+   
+   <delete id="deleteProduct" parameterType="java.util.Map">
+      	DELETE FROM ezkit_product
+      	WHERE	product_num = #{product_num}
+   </delete>   
+   
+   <select id="getNum" resultType="int">
+      	SELECT	seq_ezkit_product.nextval
+      	FROM	dual
+   </select>
+   
+</mapper>

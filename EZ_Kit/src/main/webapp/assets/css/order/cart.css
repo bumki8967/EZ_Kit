@@ -1,0 +1,258 @@
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.order_side_menu_area {
+    position: fixed;
+    background-color: #ffffff;
+    border-top-left-radius: 2rem;
+    top: 24rem;
+    right: 0;
+    width: 13%;
+    height: 71%;
+    padding: 2rem 2rem 2rem 2rem;
+    font-size: 2rem;
+    color: #3b230f;
+}
+
+.side_menu_link {
+    color: #3b230f;
+    text-decoration: none;
+}
+
+.ez_kit_logo {
+    font-size: 3rem;
+    font-weight: bold;
+    border-bottom: 2px solid #3b230f;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.order_side_menu_label {
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.side_menu_product_info_area {
+    margin-top: 5rem;
+}
+
+.product_name_list_area {
+    height: 20rem;
+    overflow: scroll;
+}
+
+.side_menu_label {
+    font-weight: bold;
+    border-bottom: 1px solid #3b230f4b;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.side_menu_product_name {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.order_product_list_area {
+    margin: auto;
+    margin-top: 5rem;
+    width: 60%;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    color: #412a13;
+    padding: 4rem 4rem 4rem 4rem;
+    min-width: 110rem;
+}
+
+.side_menu_price_result {
+    text-align: right;
+    padding-right: 3rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.side_menu_btn_area {
+    text-align: center;
+    border-top: 2px solid #3b230f;
+    margin-top: 4rem;
+    padding-top: 2rem;
+}
+
+.order_btn {
+    outline: none;
+    border: 1px solid #3b230f;
+    background-color: transparent;
+    border-radius: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 90%;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.order_btn:hover {
+    background-color: #3b230f25;
+}
+
+.user_point_area {
+    margin: auto;
+    display: flex;
+    margin-top: 10rem;
+    width: 60%;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    color: #412a13;
+    padding: 4rem 4rem 2rem 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    min-width: 110rem;
+}
+
+.point_label {
+    width: 50%;
+}
+
+.point_text_div {
+    width: 50%;
+}
+
+.point_textBox {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #412a13;
+    font-size: 1.7rem;
+    width: 20rem;
+    padding-left: 1rem;
+    margin-right: 1rem;
+}
+
+.point_btn {
+    outline: none;
+    width: 9rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    background-color: transparent;
+    border: 1px solid #412a13;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.point_btn:hover {
+    background-color: #412a1325;
+}
+
+.list_label {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+}
+
+.util_area {
+    display: flex;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.product_list_table {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.name_th, .name_td {
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+.check_th, .name_th, .price_th,
+.quantity_th, .del_th {
+    border-bottom: 2px solid #412a13;
+    padding-bottom: 1rem;
+}
+
+.check_td, .name_td, .price_td,
+.quantity_td, .del_td {
+    border-bottom: 1px solid #412a134d;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.checkbox {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.product_link {
+    color: #6b3f1b;
+    text-decoration: none;
+}
+
+.cancel_btn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #6b3f1b;
+}
+
+.quantity_minus_btn {
+    margin-right: -1rem;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 2rem;
+    width: 2.5rem;
+    border: 1px solid #6b3f1b;
+    border-right: 1px solid #ffffff;
+    color: #6b3f1b;
+}
+
+.quantity_result {
+    outline: none;
+    background-color: transparent;
+    font-size: 2rem;
+    width: 5rem;
+    border: 1px solid #6b3f1b;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    color: #3b230f;
+}
+
+.quantity_plus_btn {
+    margin-left: -1rem;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 2rem;
+    width: 2.5rem;
+    border: 1px solid #6b3f1b;
+    border-left: 1px solid #ffffff;
+    color: #6b3f1b;
+}
+
+.all_check_btn, .all_check_cancel_btn, .select_del_btn {
+    outline: none;
+    border: 1px solid #3b230f;
+    background-color: transparent;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    color: #3b230f;
+    height: 3rem;
+    width: 8rem;
+    cursor: pointer;
+}
+
+.all_check_btn:hover, .all_check_cancel_btn:hover, .select_del_btn:hover {
+    background-color: #3b230f21;
+}

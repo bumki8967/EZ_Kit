@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper 
+   PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+<mapper namespace="com.project.ezkit.admin.AdminMapper">
+	<resultMap type="com.project.ezkit.admin.Admin" id="Admin">
+		<result property="admin_id"		column="admin_id" />
+		<result property="admin_pw"		column="admin_pw" />
+		<result property="admin_nick"	column="admin_nick" />
+		<result property="user_type"	column="user_type" />
+	</resultMap>
+	
+	<!-- 관리자 아이디로 검색 -->
+	<select id="selectAdminById" resultMap="Admin" parameterType="String">
+		SELECT	*
+		FROM	ezkit_admin
+		WHERE	admin_id = #{admin_id}
+	</select>
+</mapper>

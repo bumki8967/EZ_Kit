@@ -1,0 +1,112 @@
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.order_result_area {
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 40%;
+    height: 100rem;
+    background-color: #ffffff;
+    font-size: 2rem;
+    color: #3a2610;
+    padding: 0rem 5rem 2rem 5rem;
+    border-radius: 2rem;
+    min-width: 60rem;
+}
+
+.punch_hole_area {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.punch_hole {
+    border: none;
+    outline: none;
+    background-color: #68441e1c;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    width: 3rem;
+}
+
+.logo_area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    border-bottom: 1px solid #3a2610;
+}
+
+.order_result_logo {
+    display: flex;
+    font-size: 4rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.logo_label {
+    text-align: right;
+    margin-top: 3rem;
+    padding-right: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.result_date {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    text-align: right;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #3a261041;
+}
+
+.product_title_area {
+    display: flex;
+    border-bottom: 2px solid #3a2610;
+    margin-top: 3rem;
+}
+
+.product_name_title, .product_name {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    font-weight: bold;
+    width: 60%;
+}
+
+.product_quantity_title, .product_quantity,
+.product_price_title, .product_price,
+.product_point_title, .product_point {
+    margin-top: 1rem;
+    text-align: center;
+    width: 20%;
+    font-weight: bold;
+}
+
+.product_area {
+    border-bottom: 2px solid #3a2610;
+    overflow: scroll;
+    height: 60rem;
+}
+
+.product_div {
+    display: flex;
+    border-bottom: 1px solid #3a26102a;
+}
+
+.all_price_area {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.all_price_label {
+    text-align: right;
+    font-weight: bold;
+    padding-right: 2rem;
+    width: 100%;
+    font-size: 3rem;
+}

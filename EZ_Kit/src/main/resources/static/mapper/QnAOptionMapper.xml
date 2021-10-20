@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper 
+   PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+<mapper namespace="com.project.ezkit.qna_option.QnAOptionMapper">
+   <resultMap type="com.project.ezkit.qna_option.QnAOption" id="QnAOption">
+      <result property="qna_option_num" 	column="qna_option_num"/>
+      <result property="qna_option_name" 	column="qna_option_name"/>
+   </resultMap>
+   
+    <!-- QnA 옵션 추가 -->
+   <insert id="insertQnaOption" parameterType="com.project.ezkit.qna_option.QnAOption">
+      	INSERT   INTO ezkit_qna_option   
+      	VALUES ( seq_ezkit_qna_option.nextval, #{qna_option_name} )       
+   </insert>
+   
+   <!-- QnA 옵션 번호로 선택 -->
+   <select id="selectQnaOptionByNum" parameterType="int" resultMap="QnAOption">
+         SELECT	*
+         FROM	ezkit_qna_option
+         WHERE  qna_option_num = #{qna_option_num}
+   </select>
+   
+   <!-- QnA 옵션 이름으로 선택 -->
+   <select id="selectQnaOptionByName" parameterType="String" resultMap="QnAOption">
+         SELECT	*
+         FROM   ezkit_qna_option
+         WHERE  qna_option_name = #{qna_option_name}
+   </select>
+   
+   <!-- QnA 전체 선택 -->
+   <select id="selectQnaOptionAll" resultMap="QnAOption">
+      	SELECT	*
+      	FROM   	ezkit_qna_option
+   </select>      
+   
+   <!-- QnA 수정 -->
+   <delete id="updateQnaOption" parameterType="com.project.ezkit.qna_option.QnAOption">
+      	UPDATE  ezkit_qna_option
+      	SET     qna_option_name = #{qna_option_name}
+      	WHERE   qna_option_num = #{qna_option_num}
+   </delete>   
+   
+   <!-- QnA 삭제 -->
+   <delete id="deleteQnaOption" parameterType="int">
+      	DELETE  FROM ezkit_qna_option
+      	WHERE   qna_option_num = #{qna_option_num}
+   </delete>   
+   
+</mapper>

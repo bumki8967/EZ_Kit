@@ -1,0 +1,94 @@
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.label_area {
+    margin-top: 2rem;
+}
+
+.logo_label {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #33210e;
+}
+
+.QnA_label {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+}
+
+.QnA_side_menu {
+    position: fixed;
+    top: 24rem;
+    left: 0;
+    width: 20rem;
+    height: 70%;
+    background-color: #ffffff;
+    border-top-right-radius: 2rem;
+    text-align: center;
+    padding: 2rem 2rem 2rem 2rem;
+    color: #472f14;
+    font-size: 2rem;
+}
+
+.side_menu_ul {
+    list-style: none;
+    padding-left: 0rem;
+    margin: 0;
+}
+
+.QnA_link_btn_area {
+    margin-top: 2rem;
+    overflow: scroll;
+    height: 70%;
+    padding-right: 1rem;
+}
+
+.QnA_link_btn {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #33210e38;
+    background-color: transparent;
+    width: 100%;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #33210e;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.QnA_link_btn:hover {
+    font-size: 2.2rem;
+}
+
+.QnA_writing_div {
+    margin-top: 3rem;
+}
+
+.QnA_writing_btn {
+    outline: none;
+    border-radius: 2rem;
+    border: 1px solid #33210e;
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    height: 4rem;
+    width: 90%;
+}
+
+.QnA_writing_btn:hover {
+    background-color: #33210e21;
+    font-size: 2.1rem;
+}

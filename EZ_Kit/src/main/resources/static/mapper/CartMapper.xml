@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper 
+   PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+<mapper namespace="com.project.ezkit.cart.CartMapper">
+   <resultMap type="com.project.ezkit.cart.Cart" id="Cart">
+      <result property="cart_num"          		column="cart_num"/>
+      <result property="product_num"       		column="product_num"/>
+      <result property="product_quantity"  		column="product_quantity"/>
+      <result property="user_id"          		column="user_id" />
+	</resultMap>
+   
+   <resultMap type="com.project.ezkit.product.Product" id="Product">
+      <result property="product_num"			column="product_num"/>
+      <result property="product_name"          	column="product_name"/>
+      <result property="product_price"          column="product_price"/>
+      <result property="product_quantity"       column="product_quantity"/>
+      <result property="product_classification" column="product_classification"/>
+      <result property="product_portion"    	column="product_portion"/>
+      <result property="product_time"    		column="product_time"/>
+      <result property="product_level"          column="product_level"/>
+      <result property="product_info"       	column="product_info"/>
+      <result property="product_regdate"      	column="product_regdate"/>
+      <result property="product_hit"         	column="product_hit"/>
+   </resultMap>
+   
+   
+    <!-- 장바구니 추가 -->
+   <insert id="insertCart" parameterType="com.project.ezkit.cart.Cart">
+		INSERT   INTO ezkit_cart   
+		VALUES ( seq_ezkit_cart.nextval, #{product_num}, #{product_quantity}, #{user_id} )       
+   </insert>
+   
+      <!-- 장바구니 추가 중복검사를 수행 -->
+    <select id="selectProductCount" parameterType="int" resultType="int">
+ 		SELECT	count(product_num) 
+		FROM 	ezkit_cart 
+		WHERE	product_num = #{product_num}
+    </select>
+   
+   <!-- 장바구니 번호로 선택 -->
+   <select id="selectCartByNum" parameterType="int" resultMap="Cart">
+		SELECT	*
+		FROM   	ezkit_cart
+		WHERE	cart_num = #{cart_num}
+   </select>
+   
+   <!-- 장바구니 전체 선택 -->
+   <select id="selectCartByAll" resultMap="Cart">
+		SELECT	*
+		FROM	ezkit_cart
+   </select>      
+   
+   <!-- 장바구니 ID로 검색 -->
+   <select id="selectCartProductById" parameterType="String" resultMap="Product">
+		SELECT	*
+		FROM   	ezkit_product
+		WHERE	product_num   IN   (   	SELECT   	product_num
+										FROM   		ezkit_cart
+										WHERE   	user_id = #{user_id}   )
+   </select>
+   
+   <select id="selectCartById" parameterType="String" resultMap="Cart">
+		SELECT	*
+		FROM   	ezkit_cart
+		WHERE	user_id = #{user_id}
+		order by product_num
+   </select>
+   
+   <!-- 장바구니 삭제 -->
+   <delete id="deleteCart" parameterType="java.util.Map">
+		DELETE	FROM ezkit_cart
+		WHERE	product_num = #{product_num} AND user_id = #{user_id}
+   </delete>   
+   
+   
+   <select id="getNum" resultType="int">
+		SELECT    seq_ezkit_cart.nextval
+		FROM      dual
+   </select>
+   
+</mapper>

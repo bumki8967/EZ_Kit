@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper 
+   PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+<mapper namespace="com.project.ezkit.classification.ClassificationMapper">
+   <resultMap type="com.project.ezkit.classification.Classification" id="Classification">
+      <result property="classification_num" 	column="classification_num"/>
+      <result property="classification_name" 	column="classification_name"/>
+   </resultMap>
+   
+   <!-- 상품 등록 -->
+   <insert id="insertClassification" parameterType="com.project.ezkit.classification.Classification">
+		INSERT   INTO ezkit_classification   
+		VALUES ( seq_ezkit_classification.nextval, #{classification_name} )       
+   </insert>
+   
+   <select id="selectClassificationByNum" parameterType="int" resultMap="Classification">
+		SELECT	*
+ 		FROM   	ezkit_classification
+ 		WHERE 	classification_num = #{classification_num}
+   </select>
+   
+   <select id="selectClassificationAll" resultMap="Classification">
+ 		SELECT 	*
+  		FROM  	ezkit_classification
+   </select>      
+
+   <update id="updateClassification" parameterType="com.project.ezkit.classification.Classification">
+		UPDATE	ezkit_classification
+   		SET  	classification_name = #{classification_name}
+   		WHERE	classification_num = #{classification_num}
+   </update>
+   
+   <delete id="deleteClassification" parameterType="int">
+   		DELETE	FROM ezkit_classification
+  		WHERE	classification_num = #{classification_num}
+   </delete>   
+   
+</mapper>

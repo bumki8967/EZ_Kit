@@ -1,0 +1,124 @@
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+body {
+    margin: 0;
+}
+
+/* ▼▼▼ 로그인, 회원가입 Top, Bottom ▼▼▼ */
+.top_account {
+    display: block;
+    font-size: 3rem;
+    width: 100%;
+    height: 10rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #68441E;
+}
+
+.top_account_text {
+    padding-top: 2.5rem;
+}
+
+.top_account_logo {
+    padding-left: 20rem;
+    color: #68441E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.account_bottom {
+    width:80%;
+    padding-left: 20rem;
+}
+
+.account_bottom_text_1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #68441E;
+    margin-bottom: 1rem;
+}
+
+.account_bottom_text_2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #68441E;
+    margin-bottom: 5rem;
+}
+/* ▲▲▲ 로그인, 회원가입 Top, Bottom ▲▲▲ */
+
+.find_pw_div {
+    margin: auto;
+    width: 40%;
+    min-width: 74rem;
+    padding: 2rem 4rem 2rem 4rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+    color: #68441E;
+    display: flex;
+    border: 1px solid #68441E;
+    display: flex;
+    justify-content: space-between;
+}
+
+.find_pw_info_div {
+    margin: auto;
+    width: 40%;
+    padding: 2rem 4rem 2rem 4rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 17rem;
+    color: #422b13;
+    font-size: 1.7rem;
+    font-weight: bold;
+    min-width: 74rem;
+    border: 1px solid #68441E;
+}
+
+.find_pw_text_div {
+    width: 65%;
+}
+
+.find_pw_text {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #68441E;
+    font-size: 1.7rem;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+.find_pw_btn_div {
+    width: 30%;
+    text-align: center;
+}
+
+.find_pw_btn {
+    outline: none;
+    border-radius: 2rem;
+    border: 1px solid #68441E;
+    background-color: transparent;
+    font-size: 1.7rem;
+    font-weight: bold;
+    width: 20rem;
+    cursor: pointer;
+}
+
+.find_pw_btn:hover {
+    background-color: #68441e2d;
+}
+
+.find_pw_info_label {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.find_pw_info_li {
+    margin-bottom: 2rem;
+}

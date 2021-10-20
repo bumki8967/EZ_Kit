@@ -1,0 +1,63 @@
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.side_menu_area {
+    position: fixed;
+    margin-top: 10rem;
+    left: 0;
+    width: 8%;
+    height: 90%;
+    background-color: #ffffff;
+    border-top-right-radius: 2rem;
+    padding: 2rem 3rem 2rem 3rem;
+    color: #4b3116;
+}
+
+.side_menu_logo_div {
+    border-bottom: 2px solid #4b3116;
+}
+
+.side_menu_logo {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+.logo_label {
+    text-align: right;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu_link_area {
+    margin-top: 5rem;
+}
+
+.side_menu_label {
+    font-size: 2rem;
+    font-weight: bold;
+    border-top: 1px solid #382510;
+    border-bottom: 1px solid #4b31162d;
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.side_menu_link_div {
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.side_menu_link {
+    color: #775939;
+    text-decoration: none;
+}

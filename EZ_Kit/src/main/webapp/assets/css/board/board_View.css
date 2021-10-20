@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.board_view_table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    width: 70%;
+    min-width: 120rem;
+    height: 65rem;
+
+    border: 1px solid #68441E;
+    border-radius: 2rem;
+    
+    background-color: #ffffff;
+
+    text-align: center;
+}
+
+.board_num, .board_title, .board_writer, .board_date, .board_hits {
+    border-bottom: 1px solid #835626;
+    height: 5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #533618;
+}
+
+.board_num {
+    width: 10%;
+}
+
+.board_title {
+    padding-left: 2rem;
+    text-align: left;
+    width: 60%;
+}
+
+.board_writer {
+    width: 10%;
+}
+
+.board_date {
+    width: 10%;
+}
+
+.board_hits {
+    width: 10%;
+}
+
+.view_content_td {
+    height: 50rem;
+}
+
+.board_view_content {
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    width: 95%;
+    height: 95%;
+    color: #291b0c;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    background-color: #ffffff;
+    line-height: 2.5rem;
+}
+
+.footer_text_td {
+    text-align: left;
+    padding-left: 3rem;
+}
+
+.footer_text_1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #68441E;
+}
+
+.footer_text_2 {
+    font-size: 1.3rem;
+    color: #201509;
+    margin-right: 3rem;
+}
+
+.board_btn_td {
+    border-top: 1px solid #68441E;
+    text-align: right;
+}
+
+.board_list_btn, .board_edit_btn, .board_del_btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    outline: none;
+    background-color: #ffffff;
+    border: 1px solid #68441E;
+    color: #363636;
+    border-radius: 2rem;
+    width: 12%;
+    height: 3.5rem;
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.board_list_btn:hover, .board_edit_btn:hover, .board_del_btn:hover {
+    background-color: #68441e1c;
+    cursor: pointer;
+    font-weight: bold;
+    color: #68441E;
+}

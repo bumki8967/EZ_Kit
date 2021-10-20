@@ -1,0 +1,81 @@
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.banner_area {
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    width: 60%;
+    min-width: 90rem;
+    height: 60rem;
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+.event_img_list {
+    width: 25rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    overflow: scroll;
+}
+
+.event_img_set {
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.event_img_view {
+    margin-left: 2rem;
+    width: 90rem;
+    height: 50rem;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.view_img_area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50rem;
+}
+
+.no_img_label {
+    margin-top: 15rem;
+    font-size: 3rem;
+    color: #68441e;
+    font-weight: bold;
+}
+
+.event_img_view_set {
+    width: 100%;
+    height: 100%;
+}
+
+.event_btn_div {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner_del_btn, .banner_add_btn {
+    width: 30rem;
+    height: 4rem;
+    border-radius: 2rem;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #68441e;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #68441e;
+}
+
+.banner_del_btn:hover, .banner_add_btn:hover {
+    background-color: #68441e1c;
+}

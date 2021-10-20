@@ -1,0 +1,211 @@
+/* 1rem = 10px        */
+
+html {
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.payment_area {
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 40%;
+    min-width: 65rem;
+    font-size: 2rem;
+    color: #68441e;
+    min-width: 70rem;
+}
+
+.user_info_div {
+    background-color: #ffffff;
+    border-radius: 2rem;
+    padding: 2rem 4rem 2rem 4rem;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.user_address_div {
+    margin-top: 2rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    padding: 4rem 4rem 4rem 4rem;
+}
+
+.post_code_div,
+.addr1_div,
+.addr2_div {
+    font-weight: bold;
+}
+
+.post_code_textbox,
+.addr1_textbox,
+.addr2_textbox {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #68441e;
+    font-size: 1.7rem;
+    color: #68441e;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.post_code_textbox {
+    width: 60%;
+}
+
+.find_post_code_btn {
+    outline: none;
+    width: 19%;
+    height: 4rem;
+    border-radius: 2rem;
+    border: 1px solid #68441e;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    color: #68441e;
+}
+
+.addr_edit_btn {
+    outline: none;
+    width: 90%;
+    height: 4rem;
+    border-radius: 2rem;
+    border: 1px solid #68441e;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #68441e;
+}
+
+.find_post_code_btn:hover,
+.addr_edit_btn:hover,
+.payment_cancel:hover,
+.payment_btn:hover {
+    background-color: #68441e26;
+}
+
+.addr1_textbox {
+    width: 80%;
+    margin-left: 4rem;
+    margin-top: 4rem
+}
+
+.addr2_textbox {
+    width: 80%;
+    margin-top: 4rem
+}
+
+.addr1_div,
+.addr2_div {
+    margin-left: 0rem;
+}
+
+.addr_edit_btn_div {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.payment_div {
+    background-color: #ffffff;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    padding: 2rem 4rem 3rem 4rem;
+}
+
+.payment_btn_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_btn,
+.account_btn,
+.tel_btn {
+    width: 20rem;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    outline: none;
+    border-radius: 2rem;
+    background-color: transparent;
+    border: 1px solid #68441e;
+    cursor: pointer;
+}
+
+.card_btn:hover,
+.account_btn:hover,
+.tel_btn:hover {
+    background-color: #68441e23;
+}
+
+.payment_input_div {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    height: 5rem;
+}
+
+.card_input_div,
+.account_input_div,
+.tel_input_div {
+    text-align: center;
+    font-weight: bold;
+}
+
+.card_num_text,
+.tel_num_text {
+    width: 8rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #68441e;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid #68441e;
+}
+
+.account_name_text,
+.account_num_text {
+    font-size: 1.7rem;
+    color: #68441e;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #68441e;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.account_name_text {
+    width: 10rem;
+}
+
+.account_num_text {
+    width: 30rem;
+}
+
+.payment_btn_div {
+    margin-top: 2rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.payment_cancel,
+.payment_btn {
+    width: 45%;
+    height: 4rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #68441e;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #68441e;
+    border-radius: 2rem;
+}
+
+.readonly:disabled {
+    background-color: #ffffff;
+    cursor: unset;
+}

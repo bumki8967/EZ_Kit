@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.classification_area {
+    display: flex;
+    margin: auto;
+    width: 40%;
+    height: 60rem;
+    min-width: 80rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding: 2rem 4rem 4rem 4rem;
+    font-size: 2rem;
+    color: #3a2611;
+}
+
+.classification_list_area {
+    width: 21rem;
+    height: 61rem;
+}
+
+.classification_list_label {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    width: 20rem;
+}
+
+.classification_list_btn_area {
+    width: 20rem;
+    height: 57rem;
+    overflow: scroll;
+    padding-right: 1rem;
+    border-right: 1px solid #3a2611;
+}
+
+.classification_btn {
+    outline: none;
+    border: 1px solid #3a2611;
+    width: 100%;
+    height: 4rem;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 0.5rem
+}
+
+.classification_btn:hover {
+    background-color: #3a261128;
+}
+
+.classification_edit_area {
+    margin-left: 3rem;
+    width: 70%;
+}
+
+.classification_edit_label {
+    font-weight: bold;
+    margin-bottom: 10rem;
+}
+
+.classification_add_div {
+    display: flex;
+    margin-bottom: 10rem;
+}
+
+.classification_edit_textBox {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #3a2611;
+    width: 37rem;
+    height: 3rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.classification_edit_btn {
+    outline: none;
+    border: 1px solid #3a2611;
+    background-color: transparent;
+    font-size: 2rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    color: #3a2611;
+    width: 6rem;
+    height: 3.5rem;
+    cursor: pointer;
+}
+
+.classification_add_btn {
+    outline: none;
+    border: 1px solid #3a2611;
+    background-color: transparent;
+    font-size: 2rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    color: #3a2611;
+    width: 13rem;
+    height: 3.5rem;
+    cursor: pointer;
+}
+
+.classification_edit_btn:hover, .classification_add_btn:hover {
+    background-color: #3a26112c;
+}
+
+.classification_edit_div {
+    display: flex;
+}

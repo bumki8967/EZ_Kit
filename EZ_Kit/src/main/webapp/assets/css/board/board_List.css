@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.board_list_body {
+    margin: 0 auto;
+}
+
+.board_list_table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+
+    width: 70%;
+    min-width: 100rem;
+
+
+    border: 1px solid #68441E;
+    border-radius: 2rem;
+    
+    background-color: #ffffff;
+
+    text-align: center;
+}
+
+.num_th, .title_th, .writer_th, .date_th, .hits_th {
+    border-bottom: 1px solid #68441E;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.num_td, .title_td, .writer_td, .date_td, .hits_td {
+    border-bottom: 1px solid #68441E;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.num_th, .num_td {
+    width: 6%;
+}
+
+.title_th, .title_td {
+    width: 50%;
+}
+
+.title_td {
+    text-align: left;
+    padding-left: 3rem;
+}
+
+.title_link {
+    color: #271a0c;
+    text-decoration: none;
+}
+
+.writer_th, .writer_td {
+    width: 8%;
+}
+
+.date_th, .date_td {
+    width: 10%;
+}
+
+.hits_th, .hits_td {
+    width: 6%;
+}
+
+.footer_text_td {
+    text-align: left;
+    padding-left: 3rem;
+}
+
+.footer_text_1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #68441E;
+}
+
+.footer_text_2 {
+    font-size: 1.3rem;
+    color: #201509;
+    margin-right: 3rem;
+}
+
+.list_btn_td {
+    text-align: right;
+}
+
+.board_writing_btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    outline: none;
+    background-color: #ffffff;
+    border: 1px solid #68441E;
+    color: #363636;
+    border-radius: 2rem;
+    width: 12%;
+    height: 3.5rem;
+    margin-top: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.board_writing_btn:hover {
+    background-color: #68441e1c;
+    cursor: pointer;
+    font-weight: bold;
+    color: #68441E;
+}

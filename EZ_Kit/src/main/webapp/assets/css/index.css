@@ -1,0 +1,223 @@
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+}
+
+.main_body {
+    margin: 0 auto;
+}
+
+.slide_area {
+    position: relative;
+}
+
+.slide_img_area {
+    width: 100%;
+    height: 60rem;
+    overflow: hidden;
+}
+
+.slide_img_set {
+    width: 100%;
+    height: 60rem;
+    /* opacity: 0%; */
+}
+
+.slide_img_area ul {
+    width: 100%;
+    font-size: 0;
+    padding-inline-start: 0px;
+}
+
+.slide_img_area ul li {
+    display: inline-block;
+    font-size: 0;
+    width: 100%;
+}
+
+.event_btn_area {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    bottom: 0rem;
+}
+
+.event_btn {
+    outline: none;
+    border: none;
+
+    background-color: #24170a;
+    color: #ffffff;
+
+    font-size: 3rem;
+    font-weight: bold;
+
+    width: 15rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.event_btn:hover {
+    background-color: #24170a46;
+}
+
+#Prev_btn {
+    border-top-right-radius: 2rem;
+}
+
+#Next_btn {
+    border-top-left-radius: 2rem;
+}
+
+.img_btn_td {
+    text-align: center;
+    width: 50rem;
+}
+
+.bestMenu_Table {
+    width: 80%;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.bestMenu_text_td {
+    padding-bottom: 3rem;
+    color: #382510;
+}
+
+.bestMenu_label {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.bestMenu_td {
+    text-align: center;
+    width: 30rem;
+    height: 50rem;
+    padding-bottom: 5rem;
+}
+
+.bestMenu_imgSet {
+    border-radius: 0.3rem;
+    box-shadow: 0px 1px 5px #4C4C4C;
+    width: 85%;
+    height: 90%;
+}
+
+.bestMenu_name {
+    margin-top: 2rem;
+}
+
+.bestMenu_name, .bestMenu_info {
+    margin-left: 4rem;
+    text-align: left;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.bestMenu_link {
+    color: #382510;
+    text-decoration: none;
+}
+
+.menuList_table {
+    width: 80%;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.menuList_text_td {
+    padding-bottom: 3rem;
+    color: #382510;
+}
+
+.menuList_label {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.menuList_img_td {
+    width: 30rem;
+    height: 30rem;
+}
+
+.menuList_img_td, .menuList_info_td {
+    border-top: 1px solid #3f2912;
+    border-bottom: 1px solid #3f2912;
+    color: #27190b;
+}
+
+.menuList_link {
+    color: #382510;
+    text-decoration: none;
+}
+
+.menuList_imgSet {
+    margin-left: 1rem;
+    border-radius: 0.1rem;
+    width: 85%;
+    height: 90%;
+}
+
+.menuList_name {
+    margin-bottom: 1rem;
+}
+
+.menuList_name, .menuList_info {
+    text-align: left;
+    font-weight: bold;
+}
+
+.menuList_name {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.menuList_info {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.menuList_textarea {
+    resize: none;
+    border: none;
+    outline: none;
+
+    color: #24170a;
+    background-color: #ffffff;
+
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: 60%;
+    height: 15rem;
+}
+
+.menuList_btn {
+    text-align: right;
+    margin-right: 4rem;
+}
+
+.main_cart_btn {
+    color: #68441E;
+    font-size: 2rem;
+    font-weight: bolder;
+    outline: none;
+    background-color: #ffffff;
+    border: 1px solid #422b13;
+    border-radius: 2rem;
+    width: 15%;
+    height: 3.5rem;
+}
+
+.main_cart_btn:hover {
+    background-color: #68441e1c;
+    cursor: pointer;
+    font-weight: bold;
+    color: #493015;
+    font-size: 2.2rem;
+}

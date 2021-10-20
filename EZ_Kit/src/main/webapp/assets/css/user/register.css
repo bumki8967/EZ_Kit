@@ -1,0 +1,183 @@
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+/* Body 설정 */
+.register_body {
+    margin: 0 auto;
+}
+
+/* ▼▼▼ 로그인, 회원가입 Top, Bottom ▼▼▼ */
+.top_account {
+    display: block;
+    font-size: 3rem;
+    width: 100%;
+    height: 10rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #68441E;
+}
+
+.top_account_text {
+    padding-top: 2.5rem;
+}
+
+.top_account_logo {
+    padding-left: 20rem;
+    color: #68441E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.account_bottom {
+    width:80%;
+    padding-left: 20rem;
+}
+
+.account_bottom_text_1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #68441E;
+    margin-bottom: 1rem;
+}
+
+.account_bottom_text_2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #68441E;
+    margin-bottom: 5rem;
+}
+/* ▲▲▲ 로그인, 회원가입 Top, Bottom ▲▲▲ */
+
+.register_table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+
+    width: 40%;
+    height: 50rem;
+
+    border: 1px solid #68441E;
+    border-radius: 2rem;
+
+    background-color: #ffffff;
+
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.register_title {
+    text-align: center;
+    font-weight: bold;
+    color: #68441E;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.register_td {
+    text-align: center;
+}
+
+.register_div_text {
+    margin-left: 9rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.register_text {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #68441E;
+    width: 70%;
+    height: 3rem;
+    margin-bottom: 5rem;
+    padding-left: 2rem;
+    font-size: 1.8rem;
+    background-color: #ffffff;
+}
+
+.register_id_text {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #68441E;
+    width: 40%;
+    height: 3rem;
+    margin-bottom: 5rem;
+    padding-left: 2rem;
+    font-size: 1.8rem;
+    background-color: #ffffff;
+}
+
+.register_postcode_text {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #68441E;
+    width: 52%;
+    height: 3rem;
+    margin-bottom: 5rem;
+    padding-left: 2rem;
+    font-size: 1.8rem;
+}
+
+.selectEmail {
+    width: 30%;
+    height: 3.3rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #68441E;
+}
+
+.postcode_btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    outline: none;
+    background-color: #ffffff;
+    border: 1px solid #68441E;
+    color: #363636;
+    border-radius: 2rem;
+    width: 18%;
+    height: 3.5rem;
+}
+
+.postcode_btn:hover {
+    background-color: #68441e1c;
+    cursor: pointer;
+    font-weight: bold;
+    color: #68441E;
+}
+
+.register_btn_td {
+    padding-bottom: 5rem;
+}
+
+.register_btn, .register_cancel_btn {
+    font-size: 2rem;
+    outline: none;
+    background-color: #ffffff;
+    border: 1px solid #68441E;
+    color: #363636;
+    border-radius: 2rem;
+    width: 50%;
+    height: 3.5rem;
+}
+
+.register_btn {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.register_btn:hover, .register_cancel_btn:hover {
+    background-color: #68441e1c;
+    cursor: pointer;
+    font-weight: bold;
+    color: #68441E;
+}
+
+.id_caps_check, .pw_caps_check {
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    color: #d45555;
+}

@@ -1,0 +1,71 @@
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+.top_bar_area {
+    min-width: 130rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.user_util_div {
+    text-align: right;
+    padding: 0.5rem 5rem 0.5rem 0rem;
+    background-color: #291b00;
+    font-size: 1.7rem;
+}
+
+.user_util_link {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+.user_menu_div {
+    position: relative;
+    background-color : white;
+    display: flex;
+    height: 8rem;
+    justify-content: center;
+    padding-top: 3rem;
+    box-shadow: 0px 0px 5px #291b00;
+}
+
+.top_menu_link {
+    color: #291b00;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.top_bar_logo_div {
+    position: absolute;
+    left: 5rem;
+    top: -20px;
+}
+
+.EZ_Kit_logo_set {
+    width: 30rem;
+    height: 15rem;
+}
+
+.EZKit_info_div, .menu_list_div,
+.notice_div {
+    margin-right: 5rem;
+}
+
+.cart_div{
+    position: absolute;
+    right: 18rem;
+}
+
+.find_menu_div {
+    position: absolute;
+    right: 5rem;
+}

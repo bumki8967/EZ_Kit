@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper 
+   PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+<mapper namespace="com.project.ezkit.inquiry.InquiryMapper">
+   <resultMap type="com.project.ezkit.inquiry.Inquiry" id="Inquiry">
+      <result property="inquiry_num"      	column="inquiry_num" />
+      <result property="inquiry_title"   	column="inquiry_title" />
+      <result property="inquiry_content"   	column="inquiry_content" />
+      <result property="inquiry_reply"   	column="inquiry_reply" />
+      <result property="inquiry_date"      	column="inquiry_date" />
+      <result property="inquiry_result"   	column="inquiry_result" />
+      <result property="user_id"         	column="user_id" />
+   </resultMap>
+   
+    <!-- 문의 작성 -->
+   <insert id="insertInquiry" parameterType="com.project.ezkit.inquiry.Inquiry">
+      	INSERT   INTO ezkit_inquiry   
+      	VALUES ( seq_ezkit_inquiry.nextval, #{inquiry_title}, #{inquiry_content}, #{inquiry_reply}, sysdate, 1, #{user_id} )       
+   </insert>
+   
+   <!-- 문의 번호로 선택 -->
+   <select id="selectInquiryByNum" parameterType="int" resultMap="Inquiry">
+         SELECT	*
+         FROM	ezkit_inquiry
+         WHERE	inquiry_num = #{inquiry_num}
+   </select>
+   
+   <!-- 문의 아이디로 선택 -->
+   <select id="selectInquiryByUserId" parameterType="String" resultMap="Inquiry">
+         SELECT	*
+         FROM	ezkit_inquiry
+         WHERE	user_id = #{user_id}
+   </select>
+   
+     <!-- 문의 번호로 선택 -->
+   <select id="selectInquiryByResult" parameterType="int" resultMap="Inquiry">
+         SELECT	*
+         FROM	ezkit_inquiry
+         WHERE 	inquiry_result = #{inquiry_result}
+   </select>
+   
+   <!-- 문의 전체 선택 -->
+   <select id="selectInquiryAll" resultMap="Inquiry">
+   		SELECT	*
+   		FROM   	ezkit_inquiry
+   </select>      
+   
+   <!-- 문의 답변 갱신 -->
+   <update id="updateInquiryReply" parameterType="com.project.ezkit.inquiry.Inquiry">
+  		UPDATE	ezkit_inquiry
+ 		SET		inquiry_reply = #{inquiry_reply}, inquiry_result = 2
+  		WHERE 	inquiry_num = #{inquiry_num}
+   </update>   
+</mapper>

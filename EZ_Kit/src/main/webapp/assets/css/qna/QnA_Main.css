@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* 1rem = 10px로 설정 */
+html { 
+    font-size: 62.5%;
+    background-color: #68441e1c;
+}
+
+.QnA_list_area {
+    margin: auto;
+    width: 50%;
+    height: 65rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    font-size: 2rem;
+    color: #33210e;
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+.title_link {
+    color: #33210e;
+    text-decoration: none;
+}
+
+.QnA_list_table {
+    width: 100%;
+    text-align: left;
+}
+
+.num_th, .num_td {
+    text-align: center;
+}
+
+.title_th, .title_td {
+    padding-left: 1rem;
+}
+
+.num_th, .title_th {
+    border-bottom: 2px solid #33210e;
+    padding-bottom: 1rem;
+}
+
+.num_td, .title_td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #33210e2f;
+}
