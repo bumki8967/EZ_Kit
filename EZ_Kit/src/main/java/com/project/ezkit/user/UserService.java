@@ -15,7 +15,7 @@ public class UserService {
 	public void insertUser(User u) {
 		mapper.insertUser(u);
 	}
-
+ 
 	public User selectUserById(String user_id) {
 		return mapper.selectUserById(user_id);
 	}
